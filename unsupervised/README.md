@@ -1,5 +1,4 @@
 # Unsupervised NLP
-----
 
 This was my first attempt at using clustering algorithms.  I decided to try different permutations of unsupervised(clustering), and supervised techniques to gauge how they compared and how they worked in conjunction with one another.
 
