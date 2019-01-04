@@ -10,8 +10,6 @@ The 20 Newsgroups dataset is a collection of approximately 20,000 newsgroup docu
 
 I chose 10 of the most closely related topics and I am going to try and build a classification model to predict which newsgroup a data point belongs to.
 
-Clustering suggests groupings based on patterns in the data. These groupings are typically formed on the basis of similarity. For example, books written by the same author could be clustered together. Clustering can uncover patterns in the data that can be used for inference or for feature engineering purposes. The biggest difference between clustering and classification if that clustering can work without labels.
-
 ## Results: Supervised vs Unsupervised
 
 Clustering suggests groupings based on patterns in the data. These groupings are typically formed on the basis of similarity. For example, books written by the same author would be clustered together. Clustering can uncover patterns in the data that can be used for inference or for feature engineering purposes. The biggest difference between clustering and classification if that clustering can work without labels.
