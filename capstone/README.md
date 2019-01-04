@@ -136,11 +136,11 @@ Calling the Two Sigma functions were also somewhat annoying.  I could only load 
 
 ## Results
 
-** _ Training Accuracy Score:  0.55_ **
+**_Training Accuracy Score:  0.55_**
 
-** _ Validation Accuracy Score:  0.54_ **
+**_Validation Accuracy Score:  0.54_**
 
-** _Test Set Accuracy Score:  0.60 -> The test set was provided by Kaggle_ **
+**_Test Set Accuracy Score:  0.60 -> The test set was provided by Kaggle_**
 
 I ended up getting a score of 60.41% on the test set provided by Kaggle, which put me in the top 50% of the competition.  The discrepancy between my validation accuracy and the test set score is a result of how the test set score is calculated, which is described at the top of the notebook.
 
