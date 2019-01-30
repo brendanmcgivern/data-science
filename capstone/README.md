@@ -23,7 +23,9 @@ Can we use news analytics and market data to predict stock price performance? Th
 
 The end result of this project is a model that predicts a signed confidence of an assets fluctuation over a ten-day window.
 
-<div style="text-align:center"><img src="https://latex.codecogs.com/gif.latex?$$\widehat{y}_{ti}\in[-1,&space;1]$$" title="$$\widehat{y}_{ti}\in[-1, 1]$$" /></div>
+<p align="center">
+<img align="center" src="https://latex.codecogs.com/gif.latex?$$\widehat{y}_{ti}\in[-1,&space;1]$$" title="$$\widehat{y}_{ti}\in[-1, 1]$$" />
+</p>
 
 Initially, I was a little confused with the evaluation process here.  Most people think of stock market predictions as being regression problems but this seemed like a binary classification problem to me.  An asset either has a positive or a negative return, with the signed confidence being used to indicate both the direction and the magnitude of this move.
 
