@@ -42,9 +42,9 @@ For each day in the evaluation time period, we calculate:
     <img src="https://latex.codecogs.com/gif.latex?$$score=\frac{\bar{x}_{t}}{\sigma&space;(x_{t})}$$" title="$$score=\frac{\bar{x}_{t}}{\sigma (x_{t})}$$" />
 </p>
 
-where <img src="https://latex.codecogs.com/gif.latex?$r_{ti}$" title="$r_{ti}$" /> is the 10-day market-adjusted leading return for day $t$ for instrument $i$, and $u_{ti}$ is a 0/1 universe variable that controls whether a particular asset is included in scoring on a particular day.
+where <img src="https://latex.codecogs.com/gif.latex?$r_{ti}$" title="$r_{ti}$" /> is the 10-day market-adjusted leading return for day *t* for instrument *i*, and <img src="https://latex.codecogs.com/gif.latex?$u_{ti}$" title="$u_{ti}$" /> is a 0/1 universe variable that controls whether a particular asset is included in scoring on a particular day.
 
-The submission score is then calculated as the mean divided by the standard deviation of your daily $x_{t}$ values:
+The submission score is then calculated as the mean divided by the standard deviation of your daily <img src="https://latex.codecogs.com/gif.latex?$x_{t}$" title="$x_{t}$" /> values:
 
 If the standard deviation of predictions is 0, the score is defined as 0.
 
