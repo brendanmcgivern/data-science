@@ -24,7 +24,7 @@ Can we use news analytics and market data to predict stock price performance? Th
 The end result of this project is a model that predicts a signed confidence of an assets fluctuation over a ten-day window.
 
 <p align="center">
-<img align="center" src="https://latex.codecogs.com/gif.latex?$$\widehat{y}_{ti}\in[-1,&space;1]$$" title="$$\widehat{y}_{ti}\in[-1, 1]$$" />
+    <img align="center" src="https://latex.codecogs.com/gif.latex?$$\widehat{y}_{ti}\in[-1,&space;1]$$" title="$$\widehat{y}_{ti}\in[-1, 1]$$" />
 </p>
 
 Initially, I was a little confused with the evaluation process here.  Most people think of stock market predictions as being regression problems but this seemed like a binary classification problem to me.  An asset either has a positive or a negative return, with the signed confidence being used to indicate both the direction and the magnitude of this move.
@@ -33,10 +33,16 @@ as mentioned above, the signed confidence interval needs to be between [-1 and 1
 
 
 For each day in the evaluation time period, we calculate:
-$$x_{t}=\sum_{i}\widehat{y}_{ti}r_{ti}u_{ti}$$
-$$score=\frac{\bar{x}_{t}}{\sigma (x_{t})}$$
 
-where $r_{ti}$ is the 10-day market-adjusted leading return for day $t$ for instrument $i$, and $u_{ti}$ is a 0/1 universe variable that controls whether a particular asset is included in scoring on a particular day.
+<p align="center">
+    <img src="https://latex.codecogs.com/gif.latex?$$x_{t}=\sum_{i}\widehat{y}_{ti}r_{ti}u_{ti}$$" title="$$x_{t}=\sum_{i}\widehat{y}_{ti}r_{ti}u_{ti}$$" />
+</p>
+
+<p align="center">
+    <img src="https://latex.codecogs.com/gif.latex?$$score=\frac{\bar{x}_{t}}{\sigma&space;(x_{t})}$$" title="$$score=\frac{\bar{x}_{t}}{\sigma (x_{t})}$$" />
+</p>
+
+where <img src="https://latex.codecogs.com/gif.latex?$r_{ti}$" title="$r_{ti}$" /> is the 10-day market-adjusted leading return for day $t$ for instrument $i$, and $u_{ti}$ is a 0/1 universe variable that controls whether a particular asset is included in scoring on a particular day.
 
 The submission score is then calculated as the mean divided by the standard deviation of your daily $x_{t}$ values:
 
